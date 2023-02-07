@@ -18,6 +18,10 @@ spring:
         format_sql: true
         use_sql_comments: true
 
+# mybatis 관련 설정
+  mybatis:
+    mapper-locations: classpath*:**/mapper/*.xml
+
 logging.level:
   org.hibernate.SQL: debug
 #  org.hibernate.type: trace # value값 보기
